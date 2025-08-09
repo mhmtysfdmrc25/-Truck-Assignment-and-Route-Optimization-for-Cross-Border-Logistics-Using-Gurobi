@@ -1,43 +1,16 @@
-Vehicle Routing Optimization with Gurobi
+Project Description
+:
+This project aims to develop a Gurobi-based optimization tool for improving the efficiency of international freight shipments between France and Turkey. The model will determine (1) how to assign shipment loads to available trucks under capacity constraints, and (2) the most cost-effective delivery sequence of multiple destinations per truck, starting from a customs checkpoint and proceeding to multiple delivery points. The goal is to minimize the total transportation cost by considering both fixed costs per truck and distance-based variable costs. The model will ensure that shipments heading to the same destination are assigned to the same truck and that each truck’s route is optimized to reduce total kilometers traveled.
 
-📌 Project Description
+Suggested Method/Tool/Techniques(s) of Approach
+:
+- Python programming with Gurobi solver.
+- Binary decision variables for load-truck assignment and routing.
+- Data input through Excel files: distance matrix.
+- Cost function combining fixed cost per truck and variable cost per kilometer. 
+- Route optimization using shortest path evaluation over delivery point permutations.
+- Scenario testing for different truck numbers, capacities, and destination clusters.
 
-This project solves a Vehicle Routing Problem (VRP) using the Gurobi Optimizer in Python.
-It determines the most cost-efficient routes for trucks considering:
-	•	Fixed cost per truck
-	•	Distance-based transportation cost
-	•	Capacity constraints
-	•	Mandatory transit points (e.g., customs locations)
-
-The goal is to minimize the total cost while ensuring all delivery points are served.
-
-⸻
-
-⚙️ Features
-	•	Reads distance matrix from an Excel file
-	•	Supports multiple transit/customs points
-	•	Considers truck capacity and demands
-	•	Objective function includes fixed + variable cost
-	•	Produces optimized route sequences for each truck
-
- Project Structure
-├── proje kodu(güncel vrp ile).py   # Main Python script
-├── distances matrix.xlsx           # Distance matrix input file
-└── README.md                       # Project description (this file)
-
-📊 Input Data
-	•	distances matrix.xlsx
-	•	Square matrix with distances between locations
-	•	Row and column names must match exactly
-	•	Demand list for delivery points (defined inside the code)
-
-⸻
-
-🛠 Requirements
-	•	Python 3.8+
-	•	Gurobi Optimizer (with a valid license)
-	•	pandas
-
- 📌 Notes
-	•	Mandatory transit points (e.g., Istanbul, Kapıkule, Strasbourg) must exist in the distance matrix.
-	•	Demand values and truck capacities can be adjusted directly inside the Python file.
+Results And Deliverables Expected 
+:
+- A fully functional Python-based optimization tool using Gurobi - Automated output: truck assignments, optimized delivery routes, and total cost - Reduction in total cost through better truck utilization and route planning - Decision support framework to minimize the number of trucks used per shipment cycle
