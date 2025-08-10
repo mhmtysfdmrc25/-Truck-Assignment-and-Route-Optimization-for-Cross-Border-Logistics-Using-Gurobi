@@ -1,11 +1,3 @@
-# Istanbul–France Truck Assignment & Route Optimization (VRP, Gurobi)
-
-**Author:** Yusuf Demirci (Industrial Engineering, Sabancı University)  
-**Company:** VIP Lojistik (Hadımköy, Istanbul)  
-**Period:** Summer Internship 2025
-
----
-
 ## Overview
 This project is a decision-support tool for **assigning trucks and optimizing road routes** from **Istanbul/Hadımköy** to multiple delivery locations in **France**. The model reflects the company’s real operating corridor—**Istanbul → Kapıkule (TR–BG) → Strasbourg (FR entry)** via **Bulgaria → Slovenia → Austria → Germany → France**—and computes a **minimum-cost plan** that covers all demands while respecting fleet size and truck capacity.
 
